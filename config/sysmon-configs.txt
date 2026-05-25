@@ -1,0 +1,45 @@
+#  Sysmon installation 
+
+https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+
+#  extract all 
+
+. \sysmon66.exe 
+
+#  This enabled Sysmon event collection. -- ( ossec.conf - file)
+
+<localfile>
+  <location>Microsoft-Windows-Sysmon/Operational</location>
+  <log_format>eventchannel</log_format>
+</localfile>
+
+>> This config was for collecting Windows Defender logs into Wazuh.
+
+<localfile>
+  <location>Microsoft-Windows-Windows Defender/Operational</location>
+  <log_format>eventchannel</log_format>
+</localfile>
+</ossec_config>  
+
+#  Threat hunting-commands 
+
+- powershell -ep bypass 
+- whoami
+- net user
+- ipconfig 
+
+#  malware testing 
+
+https://www.eicar.org/download-anti-malware-testfile/
+
+- EICAR test file used for safe malware detection testing . 
+- observed windows defender alerts and wazuh threat hunting events .
+
+#  Sysmon was used to monitor:
+- Process creation
+- PowerShell execution
+- Command-line activity
+- Discovery commands
+- Windows event telemetry
+
+The logs were forwarded to Wazuh using eventchannel log collection.

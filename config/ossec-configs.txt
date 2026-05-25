@@ -1,0 +1,29 @@
+#  Agent setup 
+
+<ossec_config>
+  <client>
+    <server>
+      <address>192.168.1.8</address>
+      <port>1514</port>
+      <protocol>tcp</protocol>
+    </server>
+    <config-profile>windows, windows10</config-profile>
+    <crypto_method>aes</crypto_method>
+    <notify_time>10</notify_time>
+    <time-reconnect>60</time-reconnect>
+    <auto_restart>yes</auto_restart>
+
+#  File Integrity monitoring - (ossec.conf - file)
+
+<directories realtime="yes" report_changes="yes">D:\WAZUH PROJECTS\demo-fld</directories>
+
+<directories realtime="yes" report_changes="yes">C:\Desktop\BOOKS</directories>
+
+#  wazuh-agent-connection.txt
+ 
+NET START Wazuh - ( Powershell )
+NET STOP Wazuh -  ( Powershell )
+Restart-Service Wazuh - ( Powershell )  
+
+
+
