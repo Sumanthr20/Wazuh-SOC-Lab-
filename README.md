@@ -4,13 +4,13 @@ A beginner-friendly Security Operations Center (SOC) home lab built with Wazuh f
 📋 Table of Contents
 
 Overview
-Lab Architecture
-Tools & Technologies
-Features & Demonstrations
+- Lab Architecture
+- Tools & Technologies
+- Features & Demonstrations
 
-File Integrity Monitoring (FIM)
-Threat Hunting & Log Analysis
-Malware Detection
+- File Integrity Monitoring (FIM)
+- Threat Hunting & Log Analysis
+- Malware Detection
 
 
 Skills Learned
@@ -19,9 +19,9 @@ Skills Learned
 Overview
 This lab was built to gain hands-on experience with core SOC workflows, including:
 
-Monitoring endpoints for suspicious activity
-Detecting and investigating security events
-Analyzing logs from a Windows environment using the Wazuh platform
+- Monitoring endpoints for suspicious activity
+- Detecting and investigating security events
+- Analyzing logs from a Windows environment using the Wazuh platform
 
 
 Lab Architecture
@@ -83,11 +83,11 @@ This simulation demonstrates how Wazuh supports SOC analysts in monitoring and r
 
 Skills Learned
 
-SOC monitoring and analysis
-Threat detection and investigation
-Windows event monitoring (Event Logs + Sysmon)
-Log analysis and correlation
-Endpoint visibility and monitoring
-Basic threat hunting workflows
+- SOC monitoring and analysis
+- Threat detection and investigation
+- Windows event monitoring (Event Logs + Sysmon)
+- Log analysis and correlation
+- Endpoint visibility and monitoring
+- Basic threat hunting workflows
 Working with Wazuh dashboards
 Security event investigation
